@@ -13,6 +13,7 @@ LONG_BREAK_MIN = 20
 reps = 0
 check = ""
 timer = None
+
 #  TIMER RESET  
 def reset():
     window.after_cancel(timer)
@@ -21,6 +22,8 @@ def reset():
     check_label.config(text="")
     global reps
     reps = 0
+
+
 # TIMER MECHANISM  
 def start_timer():
     global reps
@@ -66,9 +69,6 @@ def countdown(seconds):
     canvas.itemconfig(time_text, text= f"{minutes}:{count_sec}")
     
     
-
-    
-
 # ---------------------------- UI SETUP ------------------------------- #
 window= Tk()
 
