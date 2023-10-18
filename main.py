@@ -40,7 +40,7 @@ def start_timer():
         timer_label.config(text="Work", fg= GREEN)
         
 
-# ---------------------------- COUNTDOWN MECHANISM ------------------------------- # 
+# COUNTDOWN MECHANISM 
 def countdown(seconds):
     minutes = math.floor(seconds/60 )
     count_sec = seconds % 60
@@ -98,17 +98,6 @@ reset_button.grid(column=2, row=2)
 
 check_label = Label(text="", fg= GREEN, font=(FONT_NAME, 15, "bold"), bg= YELLOW)
 check_label.grid(column=1, row=3)
-
-
-
-
-
-
-
-
-
-
-
 
 
 
